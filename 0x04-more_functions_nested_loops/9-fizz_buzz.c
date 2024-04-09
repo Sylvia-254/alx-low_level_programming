@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
 * main - func prints the numbers from 1-100, but multiples of three
-* Fizz is printed instead of numbers, for multipples of five, Buzz and for multiples of five and three FizzBuzz.
+* Fizz is printed instead of numbers, Buzz multiples of both three and five
 * Return: Always (0)
 */
 int main(void)
@@ -31,5 +31,4 @@ printf(" ");
 printf("\n");
 
 return (0);
-
 }
