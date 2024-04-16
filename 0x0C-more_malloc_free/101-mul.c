@@ -133,7 +133,7 @@ t = mul(argv[2][ti], argv[1], l1 - 1, a, (ln - 2) - i);
 if (t == NULL)
 {
 for (ti = 0; e[ti]; ti++)
-_putchar(e[ti])
+_putchar(e[ti]);
 free(a);
 exit(98);
 }
