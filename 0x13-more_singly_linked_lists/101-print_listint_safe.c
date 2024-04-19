@@ -42,14 +42,14 @@ nodes++;
 tortoise = tortoise->next;
 }
 
- return (nodes);
- }
+return (nodes);
+}
 
- tortoise = tortoise->next;
- hare = (hare->next)->next;
- }
+tortoise = tortoise->next;
+hare = (hare->next)->next;
+}
 
- return (0);
+return (0);
 }
 
 /**
