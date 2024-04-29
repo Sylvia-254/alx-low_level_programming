@@ -1,27 +1,25 @@
 #include <stdio.h>
 /**
-* main - main block
-* Description: computes and prints the sum of all the multiples of 3
-* Return: 0
+* main - Prints first 50 Fibonacci numbers, starting with 1 and 2,
+* separated by a comma followed by a space.
+*
+* Return: Always 0.
 */
 int main(void)
 {
-	int i = 0;
-	long int a = 0, b = 1, next;
+int count;
+unsigned long fib1 = 0, fib2 = 1, sum;
+for (count = 0; count < 50; count++)
+{
+sum = fib1 + fib2;
+printf("%lu", sum);
+fib1 = fib2;
+fib2 = sum;
+if (count == 49)
+printf("\n");
+else
+printf(", ");
 
-	while (i < 50)
-	{
-		next = a + b;
-		a = b;
-		b = next;
-		printf("%lu", next);
-
-		if (i < 49)
-		{
-			printf(",");
-		}
-		i++;
-	}
-	putchar('\n');
-	return (0);
+}
+return (0);
 }
